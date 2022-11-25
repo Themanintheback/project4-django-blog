@@ -1,16 +1,16 @@
 {% extends 'main.html' %}
-{% block title %} New Blog Post {% endblock %}
+{% block title %} Edit Blog Posts {% endblock %}
 {% block content %}
 
 
-<h1>Add Posts</h1>
+<h1>Update Posts</h1>
 <br>
 
 <div class="form-group">
     <form action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button class="btn btn-secondary">Post</button>
+        <button class="btn btn-secondary">Update</button>
 
     </form>
 </div>
