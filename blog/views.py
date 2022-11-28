@@ -59,6 +59,10 @@ class AddPostView(CreateView):
         context["cat_menu"] = cat_menu
         return context
 
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
 
 class AddCategoryView(CreateView):
     model = Category
