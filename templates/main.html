@@ -36,7 +36,9 @@
               </div>
             </li>
             {% else %}
-              <a class="navbar-item" href="{% url 'category-list' %}">Categories</a>
+            <li class="navbar-item">
+              <a class="nav-link" href="{% url 'category-list' %}">Categories</a>
+            </li>  
             {% endif %}
       
 
